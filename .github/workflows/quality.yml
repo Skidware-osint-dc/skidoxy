@@ -1,0 +1,44 @@
+name: Quality checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [22, 24]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm test
+      - run: npm audit --omit=dev --audit-level=high
+  chromium:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run qa:browser
+        env:
+          QA_OFFLINE: '1'
+      - run: npm run qa:advanced
+        env:
+          QA_OFFLINE: '1'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: chromium-quality-results
+          path: |
+            qa/quality-results.json
+            qa/advanced-browser-results.json
+            qa/controlled-browser-pass.png

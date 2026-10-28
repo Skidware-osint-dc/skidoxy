@@ -1,0 +1,10 @@
+PASS Browser TLS mode: authenticated config and worker-backed Scramjet HTTP/POST/WebSocket
+PASS Direct browser TLS WebSocket API
+PASS Browser TLS isolation: body cancellation retires only its own leased worker
+PASS Browser TLS explicit AbortSignal terminates its worker
+PASS Browser TLS WebSocket: >window binary/text messages, serialized sends and exact close metadata
+PASS Browser TLS separates HTTP capacity from long-lived WebSocket workers
+PASS Browser TLS rejects an untrusted destination certificate before HTTP
+PASS Browser TLS deadlines retire stalled operations and report a typed timeout
+PASS Browser TLS enforces known and streaming upload limits before oversized data reaches upstream
+PASS Browser TLS external HTTPS: gateway receives TLS records over Wisp, never HMP HTTP metadata

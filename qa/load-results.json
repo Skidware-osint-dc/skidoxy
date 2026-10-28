@@ -1,0 +1,19 @@
+{
+  "scope": "Local same-process transport smoke load, not a cloud benchmark or soak test",
+  "node": "v22.23.4",
+  "total": 1000,
+  "concurrency": 16,
+  "responseBytes": 65536,
+  "success": 1000,
+  "fail": 0,
+  "durationMs": 1093,
+  "requestsPerSecond": 915,
+  "p50Ms": 15.15,
+  "p95Ms": 25.24,
+  "rssBeforeMiB": 72.8,
+  "rssPeakMiB": 112.9,
+  "rssAfterMiB": 104.7,
+  "gatewayStreamsRemaining": 0,
+  "clientStreamsRemaining": 0,
+  "errors": []
+}

@@ -1,0 +1,181 @@
+{
+  "node": "v22.23.4",
+  "results": [
+    {
+      "name": "Live Tor http:",
+      "status": "PASS",
+      "upstreamStatus": 200,
+      "bytes": 25724,
+      "title": "Tor Project | Anonymity Online",
+      "ms": 706
+    },
+    {
+      "name": "Live Tor https:",
+      "status": "PASS",
+      "upstreamStatus": 200,
+      "bytes": 237224,
+      "title": "DuckDuckGo - Protection. Privacy. Peace of mind.",
+      "ms": 1586
+    },
+    {
+      "name": "Chromium Scramjet/HMP live onion render",
+      "status": "PASS"
+    },
+    {
+      "name": "Live onion browser/harness",
+      "status": "FAIL",
+      "error": "page.waitForEvent: Timeout 70000ms exceeded while waiting for event \"framenavigated\"\n=========================== logs ===========================\nwaiting for event \"framenavigated\"\n============================================================\n    at /home/user/helios-engine/qa/tor-check.mjs:36:26"
+    }
+  ],
+  "events": [
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion",
+      "port": 443
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    }
+  ],
+  "localDNSCalls": 0
+}

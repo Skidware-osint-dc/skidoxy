@@ -1,0 +1,82 @@
+{
+  "results": [
+    {
+      "name": "Browser TLS mode: authenticated config and worker-backed Scramjet HTTP/POST/WebSocket",
+      "status": "PASS"
+    },
+    {
+      "name": "Direct browser TLS WebSocket API",
+      "status": "PASS"
+    },
+    {
+      "name": "Browser TLS isolation: body cancellation retires only its own leased worker",
+      "status": "PASS"
+    },
+    {
+      "name": "Browser TLS explicit AbortSignal terminates its worker",
+      "status": "PASS"
+    },
+    {
+      "name": "Browser TLS WebSocket: >window binary/text messages, serialized sends and exact close metadata",
+      "status": "PASS"
+    },
+    {
+      "name": "Browser TLS separates HTTP capacity from long-lived WebSocket workers",
+      "status": "PASS"
+    },
+    {
+      "name": "Browser TLS rejects an untrusted destination certificate before HTTP",
+      "status": "PASS"
+    },
+    {
+      "name": "Browser TLS deadlines retire stalled operations and report a typed timeout",
+      "status": "PASS"
+    },
+    {
+      "name": "Browser TLS enforces known and streaming upload limits before oversized data reaches upstream",
+      "status": "PASS"
+    },
+    {
+      "name": "Browser TLS external HTTPS: gateway receives TLS records over Wisp, never HMP HTTP metadata",
+      "status": "PASS"
+    }
+  ],
+  "errors": [
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+  ],
+  "upgrades": [
+    "/wisp/",
+    "/wisp/",
+    "/wisp/",
+    "/wisp/",
+    "/wisp/",
+    "/wisp/",
+    "/wisp/",
+    "/wisp/",
+    "/wisp/",
+    "/wisp/",
+    "/wisp/"
+  ],
+  "firstTLS": [
+    {
+      "host": "untrusted.fixture.helios.test",
+      "prefix": [
+        22,
+        3,
+        1,
+        1,
+        13
+      ]
+    },
+    {
+      "host": "example.com",
+      "prefix": [
+        22,
+        3,
+        1,
+        0,
+        251
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Recorded QA result files and screenshots from before the rename retain their original project names and paths. They are historical evidence, not current runtime configuration. The current project is skidoxy-engine; the HMP wire name/version remains unchanged for compatibility.

@@ -1,0 +1,154 @@
+TAP version 13
+# Subtest: gateway checks session expiry server-side, not just cookie Max-Age
+ok 1 - gateway checks session expiry server-side, not just cookie Max-Age
+  ---
+  duration_ms: 258.806089
+  type: 'test'
+  ...
+# Subtest: gateway issues distinct sessions and HTTPS cookie security flags
+ok 2 - gateway issues distinct sessions and HTTPS cookie security flags
+  ---
+  duration_ms: 11.604404
+  type: 'test'
+  ...
+# Subtest: HMP streams a >1 MiB response with credit replenishment
+ok 3 - HMP streams a >1 MiB response with credit replenishment
+  ---
+  duration_ms: 39.618729
+  type: 'test'
+  ...
+# Subtest: HMP streams upload larger than initial window
+ok 4 - HMP streams upload larger than initial window
+  ---
+  duration_ms: 25.161534
+  type: 'test'
+  ...
+# Subtest: HMP decompresses gzip and preserves repeated cookies
+ok 5 - HMP decompresses gzip and preserves repeated cookies
+  ---
+  duration_ms: 7.407329
+  type: 'test'
+  ...
+# Subtest: HMP returns redirects without following them
+ok 6 - HMP returns redirects without following them
+  ---
+  duration_ms: 3.668884
+  type: 'test'
+  ...
+# Subtest: HMP multiplexes concurrent requests
+ok 7 - HMP multiplexes concurrent requests
+  ---
+  duration_ms: 16.682857
+  type: 'test'
+  ...
+# Subtest: HMP carries text and binary WebSocket messages
+ok 8 - HMP carries text and binary WebSocket messages
+  ---
+  duration_ms: 5.602096
+  type: 'test'
+  ...
+# Subtest: HMP abort cancels a live response and upstream stream
+ok 9 - HMP abort cancels a live response and upstream stream
+  ---
+  duration_ms: 4.12205
+  type: 'test'
+  ...
+# Subtest: HMP rejects protocol version mismatch
+ok 10 - HMP rejects protocol version mismatch
+  ---
+  duration_ms: 5.371911
+  type: 'test'
+  ...
+# Subtest: framing validates lengths and credit overflow
+ok 11 - framing validates lengths and credit overflow
+  ---
+  duration_ms: 0.620085
+  type: 'test'
+  ...
+# Subtest: HMP stops response transmission when client withholds credit
+ok 12 - HMP stops response transmission when client withholds credit
+  ---
+  duration_ms: 186.601779
+  type: 'test'
+  ...
+# Subtest: HMP body cancellation tears down an active stream
+ok 13 - HMP body cancellation tears down an active stream
+  ---
+  duration_ms: 34.639268
+  type: 'test'
+  ...
+# Subtest: frame parser rejects 1000 deterministic malformed lengths
+ok 14 - frame parser rejects 1000 deterministic malformed lengths
+  ---
+  duration_ms: 8.758509
+  type: 'test'
+  ...
+# Subtest: normalizes onion names and permits subdomains
+ok 15 - normalizes onion names and permits subdomains
+  ---
+  duration_ms: 1.993445
+  type: 'test'
+  ...
+# Subtest: rejects malformed onion and hostname inputs
+ok 16 - rejects malformed onion and hostname inputs
+  ---
+  duration_ms: 0.906283
+  type: 'test'
+  ...
+# Subtest: blocks nonpublic IPv4, IPv6 and mapped addresses
+ok 17 - blocks nonpublic IPv4, IPv6 and mapped addresses
+  ---
+  duration_ms: 1.796745
+  type: 'test'
+  ...
+# Subtest: onion uses SOCKS hostname without DNS or direct calls
+ok 18 - onion uses SOCKS hostname without DNS or direct calls
+  ---
+  duration_ms: 0.309618
+  type: 'test'
+  ...
+# Subtest: Tor outage fails closed
+ok 19 - Tor outage fails closed
+  ---
+  duration_ms: 0.435187
+  type: 'test'
+  ...
+# Subtest: denies non-web ports before network access
+ok 20 - denies non-web ports before network access
+  ---
+  duration_ms: 0.164504
+  type: 'test'
+  ...
+# Subtest: rejects mixed public/private DNS answers
+ok 21 - rejects mixed public/private DNS answers
+  ---
+  duration_ms: 0.296053
+  type: 'test'
+  ...
+# Subtest: pending connection is destroyed after stream closes
+ok 22 - pending connection is destroyed after stream closes
+  ---
+  duration_ms: 0.223243
+  type: 'test'
+  ...
+# Subtest: gateway TLS rejects an untrusted destination certificate
+ok 23 - gateway TLS rejects an untrusted destination certificate
+  ---
+  duration_ms: 52.828016
+  type: 'test'
+  ...
+# Subtest: Wisp v2 carries TCP bytes through custom routed socket
+ok 24 - Wisp v2 carries TCP bytes through custom routed socket
+  ---
+  duration_ms: 18.911665
+  type: 'test'
+  ...
+1..24
+# tests 24
+# suites 0
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1306.203023

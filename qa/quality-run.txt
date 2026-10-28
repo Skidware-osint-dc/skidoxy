@@ -1,0 +1,15 @@
+PASS HTTP denies unauthenticated assets
+PASS HTTP rejects wrong token and cross-origin login
+PASS Chromium sign-in, service worker, bare-mux initialization
+PASS Chromium full engine: HTML, JS, CSS, fetch, POST, cookies, WebSocket
+PASS Chromium relative navigation and redirect rewriting
+PASS Chromium real external HTTPS through engine
+PASS Chromium legacy Epoxy/Wisp controlled browser path
+PASS Chromium legacy Epoxy/Wisp external HTTPS
+PASS WebSocket upgrade denies missing auth and wrong Origin
+PASS HTTP blocks authenticated path traversal
+PASS HMP malformed frame rejects and gateway survives
+PASS HMP private IP and metadata destination blocked
+PASS Onion outage fails closed through HMP
+PASS HMP stream limit rejects abusive opens
+{"pass":14,"fail":0}

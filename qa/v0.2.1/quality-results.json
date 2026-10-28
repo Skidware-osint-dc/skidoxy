@@ -1,0 +1,108 @@
+{
+  "node": "v22.23.4",
+  "platform": "linux",
+  "arch": "x64",
+  "results": [
+    {
+      "name": "HTTP denies unauthenticated assets",
+      "status": "PASS",
+      "ms": 21
+    },
+    {
+      "name": "HTTP rejects wrong token and cross-origin login",
+      "status": "PASS",
+      "ms": 8
+    },
+    {
+      "name": "Chromium sign-in, service worker, bare-mux initialization",
+      "status": "PASS",
+      "ms": 219
+    },
+    {
+      "name": "Chromium full engine: HTML, JS, CSS, fetch, POST, cookies, WebSocket",
+      "status": "PASS",
+      "ms": 327
+    },
+    {
+      "name": "Chromium relative navigation and redirect rewriting",
+      "status": "PASS",
+      "ms": 64
+    },
+    {
+      "name": "Chromium real external HTTPS through engine",
+      "status": "PASS",
+      "ms": 353
+    },
+    {
+      "name": "Chromium legacy Epoxy/Wisp controlled browser path",
+      "status": "PASS",
+      "ms": 291
+    },
+    {
+      "name": "Chromium legacy Epoxy/Wisp external HTTPS",
+      "status": "PASS",
+      "ms": 234
+    },
+    {
+      "name": "WebSocket upgrade denies missing auth and wrong Origin",
+      "status": "PASS",
+      "ms": 4
+    },
+    {
+      "name": "HTTP blocks authenticated path traversal",
+      "status": "PASS",
+      "ms": 3
+    },
+    {
+      "name": "HMP malformed frame rejects and gateway survives",
+      "status": "PASS",
+      "ms": 5
+    },
+    {
+      "name": "HMP private IP and metadata destination blocked",
+      "status": "PASS",
+      "ms": 7
+    },
+    {
+      "name": "Onion outage fails closed through HMP",
+      "status": "PASS",
+      "ms": 4
+    },
+    {
+      "name": "HMP stream limit rejects abusive opens",
+      "status": "PASS",
+      "ms": 36
+    }
+  ],
+  "logs": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+    },
+    {
+      "type": "warning",
+      "text": "you are using the last version of scramjet v1, if possible, please upgrade to v2 for better performance and more features"
+    },
+    {
+      "type": "warning",
+      "text": "%cg -> g%c Creating SingletonBox \n  \tbackground-color: #f80;\n  \tcolor: #fff;\n  \tpadding: 4px;\n  \tfont-weight: bold;\n  \tfont-family: monospace;\n  \tfont-size: 0.9em;\n   "
+    },
+    {
+      "type": "warning",
+      "text": "%cg -> g%c Creating SingletonBox \n  \tbackground-color: #f80;\n  \tcolor: #fff;\n  \tpadding: 4px;\n  \tfont-weight: bold;\n  \tfont-family: monospace;\n  \tfont-size: 0.9em;\n   "
+    },
+    {
+      "type": "warning",
+      "text": "%cg -> g%c Creating SingletonBox \n  \tbackground-color: #f80;\n  \tcolor: #fff;\n  \tpadding: 4px;\n  \tfont-weight: bold;\n  \tfont-family: monospace;\n  \tfont-size: 0.9em;\n   "
+    },
+    {
+      "type": "warning",
+      "text": "%cg -> g%c Creating SingletonBox \n  \tbackground-color: #f80;\n  \tcolor: #fff;\n  \tpadding: 4px;\n  \tfont-weight: bold;\n  \tfont-family: monospace;\n  \tfont-size: 0.9em;\n   "
+    },
+    {
+      "type": "warning",
+      "text": "%cg -> g%c Creating SingletonBox \n  \tbackground-color: #f80;\n  \tcolor: #fff;\n  \tpadding: 4px;\n  \tfont-weight: bold;\n  \tfont-family: monospace;\n  \tfont-size: 0.9em;\n   "
+    }
+  ],
+  "fixtureDialCount": 68
+}

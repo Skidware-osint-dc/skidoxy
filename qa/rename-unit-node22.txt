@@ -1,0 +1,304 @@
+TAP version 13
+# Subtest: typed public errors redact causes and never promise retry safety
+ok 1 - typed public errors redact causes and never promise retry safety
+  ---
+  duration_ms: 2.121103
+  type: 'test'
+  ...
+# Subtest: operation scope timeout aborts once and runs all cleanups once
+ok 2 - operation scope timeout aborts once and runs all cleanups once
+  ---
+  duration_ms: 25.375847
+  type: 'test'
+  ...
+# Subtest: byte budgets reject overflow without corrupting accounting
+ok 3 - byte budgets reject overflow without corrupting accounting
+  ---
+  duration_ms: 0.644055
+  type: 'test'
+  ...
+# Subtest: late sockets are destroyed after a dial deadline
+ok 4 - late sockets are destroyed after a dial deadline
+  ---
+  duration_ms: 45.282984
+  type: 'test'
+  ...
+# Subtest: heartbeat expires missing peer but accepts matching acknowledgements
+ok 5 - heartbeat expires missing peer but accepts matching acknowledgements
+  ---
+  duration_ms: 54.653654
+  type: 'test'
+  ...
+# Subtest: fragmented message larger than flow-control window reassembles exactly
+ok 6 - fragmented message larger than flow-control window reassembles exactly
+  ---
+  duration_ms: 0.981687
+  type: 'test'
+  ...
+# Subtest: invalid fragment sequences and message limits release on clear
+ok 7 - invalid fragment sequences and message limits release on clear
+  ---
+  duration_ms: 0.194202
+  type: 'test'
+  ...
+# Subtest: isolated worker pool caps queue, aborts waiters and retires cancelled leases
+ok 8 - isolated worker pool caps queue, aborts waiters and retires cancelled leases
+  ---
+  duration_ms: 0.522201
+  type: 'test'
+  ...
+# Subtest: invalid safety-limit configuration fails closed instead of silently disabling timers
+ok 9 - invalid safety-limit configuration fails closed instead of silently disabling timers
+  ---
+  duration_ms: 0.258839
+  type: 'test'
+  ...
+# Subtest: zero-length fragment floods are capped independently of byte budgets
+ok 10 - zero-length fragment floods are capped independently of byte budgets
+  ---
+  duration_ms: 0.349195
+  type: 'test'
+  ...
+# Subtest: gateway checks session expiry server-side, not just cookie Max-Age
+ok 11 - gateway checks session expiry server-side, not just cookie Max-Age
+  ---
+  duration_ms: 266.933764
+  type: 'test'
+  ...
+# Subtest: gateway issues distinct sessions and HTTPS cookie security flags
+ok 12 - gateway issues distinct sessions and HTTPS cookie security flags
+  ---
+  duration_ms: 11.237847
+  type: 'test'
+  ...
+# Subtest: gateway shutdown waits for active upgraded HMP work, not only HTTP listener close
+ok 13 - gateway shutdown waits for active upgraded HMP work, not only HTTP listener close
+  ---
+  duration_ms: 107.492911
+  type: 'test'
+  ...
+# Subtest: HMP/2 heartbeat terminates a peer that never answers pings
+ok 14 - HMP/2 heartbeat terminates a peer that never answers pings
+  ---
+  duration_ms: 41.281795
+  type: 'test'
+  ...
+# Subtest: HMP/2 browser transport answers heartbeats and stays usable
+ok 15 - HMP/2 browser transport answers heartbeats and stays usable
+  ---
+  duration_ms: 163.190693
+  type: 'test'
+  ...
+# Subtest: HMP graceful drain lets in-flight HTTP finish and refuses new work
+ok 16 - HMP graceful drain lets in-flight HTTP finish and refuses new work
+  ---
+  duration_ms: 60.066562
+  type: 'test'
+  ...
+# Subtest: HMP/2 client heartbeat fails stalled operations even if gateway never closes TCP
+ok 17 - HMP/2 client heartbeat fails stalled operations even if gateway never closes TCP
+  ---
+  duration_ms: 25.012589
+  type: 'test'
+  ...
+# Subtest: HMP streams a >1 MiB response with credit replenishment
+ok 18 - HMP streams a >1 MiB response with credit replenishment
+  ---
+  duration_ms: 45.967298
+  type: 'test'
+  ...
+# Subtest: HMP streams upload larger than initial window
+ok 19 - HMP streams upload larger than initial window
+  ---
+  duration_ms: 20.113282
+  type: 'test'
+  ...
+# Subtest: HMP decompresses gzip and preserves repeated cookies
+ok 20 - HMP decompresses gzip and preserves repeated cookies
+  ---
+  duration_ms: 13.933864
+  type: 'test'
+  ...
+# Subtest: HMP returns redirects without following them
+ok 21 - HMP returns redirects without following them
+  ---
+  duration_ms: 4.133946
+  type: 'test'
+  ...
+# Subtest: HMP multiplexes concurrent requests
+ok 22 - HMP multiplexes concurrent requests
+  ---
+  duration_ms: 20.054723
+  type: 'test'
+  ...
+# Subtest: HMP carries text and binary WebSocket messages
+ok 23 - HMP carries text and binary WebSocket messages
+  ---
+  duration_ms: 7.434069
+  type: 'test'
+  ...
+# Subtest: HMP abort cancels a live response and upstream stream
+ok 24 - HMP abort cancels a live response and upstream stream
+  ---
+  duration_ms: 4.908689
+  type: 'test'
+  ...
+# Subtest: HMP rejects protocol version mismatch
+ok 25 - HMP rejects protocol version mismatch
+  ---
+  duration_ms: 2.945332
+  type: 'test'
+  ...
+# Subtest: framing validates lengths and credit overflow
+ok 26 - framing validates lengths and credit overflow
+  ---
+  duration_ms: 0.284921
+  type: 'test'
+  ...
+# Subtest: HMP stops response transmission when client withholds credit
+ok 27 - HMP stops response transmission when client withholds credit
+  ---
+  duration_ms: 185.014885
+  type: 'test'
+  ...
+# Subtest: HMP body cancellation tears down an active stream
+ok 28 - HMP body cancellation tears down an active stream
+  ---
+  duration_ms: 38.594944
+  type: 'test'
+  ...
+# Subtest: frame parser rejects 1000 deterministic malformed lengths
+ok 29 - frame parser rejects 1000 deterministic malformed lengths
+  ---
+  duration_ms: 7.071838
+  type: 'test'
+  ...
+# Subtest: HMP/2 fragments 2 MiB binary and long UTF-8 text in both directions
+ok 30 - HMP/2 fragments 2 MiB binary and long UTF-8 text in both directions
+  ---
+  duration_ms: 50.358594
+  type: 'test'
+  ...
+# Subtest: HMP/2 enforces message admission synchronously without corrupting connection
+ok 31 - HMP/2 enforces message admission synchronously without corrupting connection
+  ---
+  duration_ms: 18.877078
+  type: 'test'
+  ...
+# Subtest: HMP/1 remains explicitly usable for old clients
+ok 32 - HMP/1 remains explicitly usable for old clients
+  ---
+  duration_ms: 10.073422
+  type: 'test'
+  ...
+# Subtest: browser RFC6455 masks client frames and validates close codes
+ok 33 - browser RFC6455 masks client frames and validates close codes
+  ---
+  duration_ms: 2.095064
+  type: 'test'
+  ...
+# Subtest: browser RFC6455 round-trips large binary, fragmented UTF-8, subprotocol and close reason
+ok 34 - browser RFC6455 round-trips large binary, fragmented UTF-8, subprotocol and close reason
+  ---
+  duration_ms: 40.667954
+  type: 'test'
+  ...
+# Subtest: browser RFC6455 responds to ping without exposing it as a website message
+ok 35 - browser RFC6455 responds to ping without exposing it as a website message
+  ---
+  duration_ms: 7.43454
+  type: 'test'
+  ...
+# Subtest: browser RFC6455 rejects masked server frames and fails closed
+ok 36 - browser RFC6455 rejects masked server frames and fails closed
+  ---
+  duration_ms: 3.868852
+  type: 'test'
+  ...
+# Subtest: browser RFC6455 caps zero-length continuation floods
+ok 37 - browser RFC6455 caps zero-length continuation floods
+  ---
+  duration_ms: 4.013984
+  type: 'test'
+  ...
+# Subtest: normalizes onion names and permits subdomains
+ok 38 - normalizes onion names and permits subdomains
+  ---
+  duration_ms: 2.834158
+  type: 'test'
+  ...
+# Subtest: rejects malformed onion and hostname inputs
+ok 39 - rejects malformed onion and hostname inputs
+  ---
+  duration_ms: 1.108209
+  type: 'test'
+  ...
+# Subtest: blocks nonpublic IPv4, IPv6 and mapped addresses
+ok 40 - blocks nonpublic IPv4, IPv6 and mapped addresses
+  ---
+  duration_ms: 2.058914
+  type: 'test'
+  ...
+# Subtest: onion uses SOCKS hostname without DNS or direct calls
+ok 41 - onion uses SOCKS hostname without DNS or direct calls
+  ---
+  duration_ms: 0.373965
+  type: 'test'
+  ...
+# Subtest: Tor outage fails closed
+ok 42 - Tor outage fails closed
+  ---
+  duration_ms: 0.44198
+  type: 'test'
+  ...
+# Subtest: denies non-web ports before network access
+ok 43 - denies non-web ports before network access
+  ---
+  duration_ms: 0.1434
+  type: 'test'
+  ...
+# Subtest: rejects mixed public/private DNS answers
+ok 44 - rejects mixed public/private DNS answers
+  ---
+  duration_ms: 0.366398
+  type: 'test'
+  ...
+# Subtest: pending connection is destroyed after stream closes
+ok 45 - pending connection is destroyed after stream closes
+  ---
+  duration_ms: 0.265214
+  type: 'test'
+  ...
+# Subtest: gateway TLS rejects an untrusted destination certificate
+ok 46 - gateway TLS rejects an untrusted destination certificate
+  ---
+  duration_ms: 63.979368
+  type: 'test'
+  ...
+# Subtest: pooled gateway TLS verifies SAN, reuses a trusted connection and rejects wrong hostname
+ok 47 - pooled gateway TLS verifies SAN, reuses a trusted connection and rejects wrong hostname
+  ---
+  duration_ms: 94.634827
+  type: 'test'
+  ...
+# Subtest: gateway TLS handshake deadline closes an unresponsive TCP peer
+ok 48 - gateway TLS handshake deadline closes an unresponsive TCP peer
+  ---
+  duration_ms: 18.885026
+  type: 'test'
+  ...
+# Subtest: Wisp v2 carries TCP bytes through custom routed socket
+ok 49 - Wisp v2 carries TCP bytes through custom routed socket
+  ---
+  duration_ms: 22.806337
+  type: 'test'
+  ...
+1..49
+# tests 49
+# suites 0
+# pass 49
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2399.518698

@@ -1,0 +1,44 @@
+services:
+  engine:
+    build: .
+    restart: unless-stopped
+    init: true
+    ports:
+      - "127.0.0.1:8080:8080"
+    environment:
+      PORT: 8080
+      PUBLIC_ORIGIN: ${PUBLIC_ORIGIN:-http://localhost:8080}
+      ACCESS_TOKEN: ${ACCESS_TOKEN:?Set ACCESS_TOKEN in .env}
+      TLS_MODE: ${TLS_MODE:-gateway}
+      WS_LIFETIME_MS: ${WS_LIFETIME_MS:-0}
+      WS_IDLE_MS: ${WS_IDLE_MS:-300000}
+      TOR_HOST: tor
+      TOR_PORT: 9050
+      MAX_CLIENTS: ${MAX_CLIENTS:-8}
+    depends_on:
+      - tor
+    mem_limit: 384m
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+  tor:
+    build: ./deploy/tor
+    restart: unless-stopped
+    mem_limit: 256m
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    # No SOCKS port published to the host or internet.
+  edge:
+    image: caddy:2
+    profiles: [https]
+    restart: unless-stopped
+    ports: ["80:80", "443:443", "443:443/udp"]
+    environment:
+      DOMAIN: ${DOMAIN:-localhost}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on: [engine]
+volumes:
+  caddy_data:
+  caddy_config:

@@ -1,0 +1,43 @@
+{
+  "name": "skidoxy-engine",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Scramjet-based browser proxy SDK with split direct/onion TCP routing",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "exports": {
+    ".": "./src/index.mjs",
+    "./hmp": "./src/hmp.mjs",
+    "./transport": "./public/transport.mjs",
+    "./protocol": "./public/protocol.mjs",
+    "./gateway": "./src/gateway.mjs",
+    "./tls": "./src/tls-transport.mjs",
+    "./reliability": "./public/reliability.mjs",
+    "./browser-tls": "./public/browser-tls-transport.mjs",
+    "./websocket": "./public/rfc6455.mjs"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test",
+    "check": "node qa/check-syntax.mjs",
+    "qa:browser": "node qa/quality-check.mjs",
+    "qa:load": "node qa/load-check.mjs",
+    "qa:tor": "node qa/tor-check.mjs",
+    "qa:advanced": "node qa/advanced-browser.mjs"
+  },
+  "dependencies": {
+    "@mercuryworkshop/bare-mux": "2.1.9",
+    "@mercuryworkshop/epoxy-transport": "3.0.2",
+    "@mercuryworkshop/scramjet": "1.1.0",
+    "@mercuryworkshop/wisp-js": "0.5.1",
+    "ipaddr.js": "2.5.0",
+    "socks": "2.8.7",
+    "ws": "8.22.0",
+    "@mercuryworkshop/epoxy-tls": "2.1.20-1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1"
+  }
+}

@@ -1,0 +1,32 @@
+✔ gateway checks session expiry server-side, not just cookie Max-Age (262.879577ms)
+✔ gateway issues distinct sessions and HTTPS cookie security flags (12.863101ms)
+✔ HMP streams a >1 MiB response with credit replenishment (48.653037ms)
+✔ HMP streams upload larger than initial window (19.076785ms)
+✔ HMP decompresses gzip and preserves repeated cookies (10.099221ms)
+✔ HMP returns redirects without following them (7.69129ms)
+✔ HMP multiplexes concurrent requests (17.627917ms)
+✔ HMP carries text and binary WebSocket messages (6.250284ms)
+✔ HMP abort cancels a live response and upstream stream (4.980395ms)
+✔ HMP rejects protocol version mismatch (3.038923ms)
+✔ framing validates lengths and credit overflow (0.396163ms)
+✔ HMP stops response transmission when client withholds credit (182.986337ms)
+✔ HMP body cancellation tears down an active stream (35.244658ms)
+✔ frame parser rejects 1000 deterministic malformed lengths (9.616141ms)
+✔ normalizes onion names and permits subdomains (1.556518ms)
+✔ rejects malformed onion and hostname inputs (0.899226ms)
+✔ blocks nonpublic IPv4, IPv6 and mapped addresses (1.793399ms)
+✔ onion uses SOCKS hostname without DNS or direct calls (0.35761ms)
+✔ Tor outage fails closed (0.40928ms)
+✔ denies non-web ports before network access (0.205982ms)
+✔ rejects mixed public/private DNS answers (0.784582ms)
+✔ pending connection is destroyed after stream closes (0.460623ms)
+✔ gateway TLS rejects an untrusted destination certificate (62.124758ms)
+✔ Wisp v2 carries TCP bytes through custom routed socket (46.89039ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1334.378613

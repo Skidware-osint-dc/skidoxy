@@ -1,0 +1,104 @@
+{
+  "node": "v22.23.4",
+  "results": [
+    {
+      "name": "Live Tor http:",
+      "status": "PASS",
+      "upstreamStatus": 200,
+      "bytes": 25724,
+      "title": "Tor Project | Anonymity Online",
+      "ms": 765
+    },
+    {
+      "name": "Live Tor https:",
+      "status": "PASS",
+      "upstreamStatus": 200,
+      "bytes": 232652,
+      "title": "DuckDuckGo - Protection. Privacy. Peace of mind.",
+      "ms": 2420
+    },
+    {
+      "name": "Chromium isolated browser TLS live onion render",
+      "status": "PASS"
+    },
+    {
+      "name": "Isolated browser TLS HTTPS onion fetch",
+      "status": "PASS"
+    },
+    {
+      "name": "Chromium Scramjet/Epoxy/Wisp live onion render",
+      "status": "PASS"
+    }
+  ],
+  "events": [
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion",
+      "port": 443
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion",
+      "port": 443
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    },
+    {
+      "host": "2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion",
+      "port": 80
+    }
+  ],
+  "localDNSCalls": 0
+}
